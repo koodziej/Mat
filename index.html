@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateusz Kołodziejak - Adwokat</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Segoe+UI:wght@400;700&family=Verdana&family=Monaco&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
@@ -21,19 +21,47 @@
             background: rgba(0, 0, 0, 0.75);
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
         }
-        main {
-            background: rgba(255, 255, 255, 0.9);
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 span {
+        header span {
             color: #007BFF;
+        }
+        nav {
+            margin-top: 10px;
+            font-style: italic;
+            font-size: 18px;
+        }
+        main {
+            background: rgba(255, 255, 255, 0.95);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .content-container {
+            display: flex;
+            align-items: center;
+        }
+        .content-container img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            margin-right: 25px;
+        }
+        .content-container div {
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        .contact {
+            margin-top: 30px;
+        }
+        .contact p {
+            font-family: 'Verdana', sans-serif;
+            margin: 5px 0;
         }
         .contact a {
             color: black;
@@ -44,35 +72,40 @@
             text-decoration: underline;
         }
         footer {
-            background: rgba(200, 200, 200, 0.8);
-            padding: 10px;
-            margin-top: 20px;
+            background: rgba(200, 200, 200, 0.9);
+            padding: 15px;
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+        }
+        h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 26px;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mateusz Kołodziejak, <span>Adwokat</span></h1>
+        <h1 style="font-family: 'Baskerville', serif; font-size: 40px; font-weight: normal;">Mateusz Kołodziejak, <span>adwokat</span></h1>
+        <nav style="font-family: 'Segoe UI', sans-serif;"
+            <a href="#o-mnie" style="color: white;">O mnie</a> | <a href="#kontakt" style="color: white;">Kontakt</a>
+        </nav>
     </header>
     <main>
-        <section id="o-mnie">
-            <h2>O mnie</h2>
-            <img src="https://i.postimg.cc/dQ85hN8Y/temp-Imagel-Edeox.avif" alt="Mateusz Kołodziejak" width="150" style="border-radius: 50%;">
-            <p>Jestem adwokatem specjalizującym się w reprezentowaniu kredytobiorców w sprawach dotyczących umów kredytowych. Dzięki wieloletniemu doświadczeniu poznałem konstrukcje umów banków, które oferowały kredyty indeksowane i denominowane do walut obcych, w tym franka szwajcarskiego.</p>
+        <section id="o-mnie" class="content-container">
+            <img src="https://i.postimg.cc/dQ85hN8Y/temp-Imagel-Edeox.avif" alt="Mateusz Kołodziejak">
+            <div>
+                <h2 style="font-family: 'Pacifico', cursive; font-size: 26px; font-weight: normal;">O mnie</h2>
+                <p><strong>Jestem adwokatem</strong> specjalizującym się w reprezentowaniu <strong>kredytobiorców</strong> w sporach dotyczących <strong>umów kredytowych</strong>. Dzięki wieloletniemu doświadczeniu poznałem konstrukcje umów banków, które oferowały kredyty <strong>indeksowane i denominowane</strong> do walut obcych, w tym <strong>franka szwajcarskiego</strong>.</p>
+                <p><strong>Prowadzę postępowania sądowe</strong>, pomagając kredytobiorcom <strong>unieważniać niekorzystne umowy</strong> i <strong>dochodzić swoich praw</strong>. Każdą sprawę traktuję indywidualnie, łącząc <strong>skuteczność</strong> z <strong>rzetelnością</strong> i <strong>dbałością o interes klienta</strong>. Jeśli masz kredyt we frankach i chcesz podjąć działania prawne – <strong>zapraszam do kontaktu</strong>.</p>
+            </div>
         </section>
-        <section id="kontakt">
-            <h2>Kontakt</h2>
-            <p class="contact">
-                📧 <a href="mailto:mateusz.kolodziejak@adwokatura.pl">mateusz.kolodziejak@adwokatura.pl</a>
-            </p>
-            <p class="contact">
-                📞 <a href="tel:502049479">502-049-479</a>
-            </p>
-            <p class="contact">
-                <a href="https://www.facebook.com/profile.php?id=100064143424475" target="_blank">
-                    <i class="fab fa-facebook"></i> Facebook
-                </a>
-            </p>
+        <section id="kontakt" class="contact">
+            <h2 style="font-family: 'Pacifico', cursive; font-size: 26px; font-weight: normal;">Kontakt</h2>
+            <p style="font-family: Verdana; font-weight: normal;">📧 <a href="mailto:mateusz.kolodziejak@adwokatura.pl" style="font-weight: normal;">mateusz.kolodziejak@adwokatura.pl</a></p>
+            <p style="font-family: Verdana; font-weight: normal;">📞 <a href="tel:502049479" style="font-weight: normal;">502-049-479</a></p>
+            <p style="font-family: Verdana; font-weight: normal;"> <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=100064143424475" target="_blank" style="font-weight: normal;">Facebook</a></p>
         </section>
     </main>
     <footer>
